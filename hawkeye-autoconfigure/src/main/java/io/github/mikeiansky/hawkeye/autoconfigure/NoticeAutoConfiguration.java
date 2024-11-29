@@ -1,7 +1,7 @@
 package io.github.mikeiansky.hawkeye.autoconfigure;
 
-import io.github.mikeiansky.notice.aop.ExceptionNoticeAop;
-import io.github.mikeiansky.notice.aop.TimeoutNoticeAop;
+import io.github.mikeiansky.hawkeye.aop.ExceptionNoticeAop;
+import io.github.mikeiansky.hawkeye.aop.TimeoutNoticeAop;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
