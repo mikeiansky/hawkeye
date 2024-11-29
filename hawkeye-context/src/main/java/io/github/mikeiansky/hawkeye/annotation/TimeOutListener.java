@@ -1,4 +1,4 @@
-package io.github.mikeiansky.notice.annotation;
+package io.github.mikeiansky.hawkeye.annotation;
 
 import java.lang.annotation.*;
 

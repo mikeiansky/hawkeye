@@ -1,9 +1,9 @@
-package io.github.mikeiansky.notice.aop;
+package io.github.mikeiansky.hawkeye.aop;
 
 import cn.hutool.core.date.DateUtil;
 import com.alibaba.fastjson2.JSONObject;
-import io.github.mikeiansky.notice.annotation.ExceptionListener;
-import io.github.mikeiansky.notice.context.NoticeThreadPool;
+import io.github.mikeiansky.hawkeye.annotation.ExceptionListener;
+import io.github.mikeiansky.hawkeye.context.NoticeThreadPool;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterThrowing;
