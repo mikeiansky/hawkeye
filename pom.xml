@@ -6,10 +6,12 @@
 
     <groupId>io.github.mikeiansky</groupId>
     <artifactId>hawkeye</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <packaging>pom</packaging>
     <modules>
         <module>hawkeye-context</module>
+        <module>hawkeye-autoconfigure</module>
+        <module>hawkeye-starter</module>
     </modules>
 
     <description>hawkeye</description>
