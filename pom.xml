@@ -6,7 +6,7 @@
 
     <groupId>io.github.mikeiansky</groupId>
     <artifactId>hawkeye</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.5</version>
     <packaging>pom</packaging>
     <modules>
         <module>hawkeye-context</module>

@@ -6,7 +6,7 @@
     <parent>
         <groupId>io.github.mikeiansky</groupId>
         <artifactId>hawkeye</artifactId>
-        <version>1.0.3</version>
+        <version>1.0.5</version>
     </parent>
 
     <artifactId>hawkeye-starter</artifactId>
@@ -16,12 +16,12 @@
         <dependency>
             <groupId>io.github.mikeiansky</groupId>
             <artifactId>hawkeye-context</artifactId>
-            <version>1.0.3</version>
+            <version>1.0.5</version>
         </dependency>
         <dependency>
             <groupId>io.github.mikeiansky</groupId>
             <artifactId>hawkeye-autoconfigure</artifactId>
-            <version>1.0.3</version>
+            <version>1.0.5</version>
         </dependency>
     </dependencies>
 
