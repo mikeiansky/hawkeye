@@ -21,7 +21,7 @@
         <dependency>
             <groupId>io.github.mikeiansky</groupId>
             <artifactId>hawkeye-context</artifactId>
-            <version>1.0.5</version>
+<!--            <version>1.0.5</version>-->
             <scope>compile</scope>
             <optional>true</optional>
         </dependency>
