@@ -46,14 +46,14 @@ public class ExceptionNoticeAop {
         threadPoolExecutor = NoticeThreadPool.getThreadPool();
     }
 
-    @AfterThrowing(value = "@within(listener)", throwing = "e")
-    public void productExceptionByClass(JoinPoint joinPoint, ExceptionListener listener, Exception e) {
-        sendExceptionNotice(joinPoint, listener, e);
+    @AfterThrowing(value = "@within(exceptionListener)", throwing = "e")
+    public void productExceptionByClass(JoinPoint joinPoint, ExceptionListener exceptionListener, Exception e) {
+        sendExceptionNotice(joinPoint, exceptionListener, e);
     }
 
-    @AfterThrowing(value = "@annotation(listener)", throwing = "e")
-    public void productExceptionByMethod(JoinPoint joinPoint, ExceptionListener listener, Exception e) {
-        sendExceptionNotice(joinPoint, listener, e);
+    @AfterThrowing(value = "@annotation(exceptionListener)", throwing = "e")
+    public void productExceptionByMethod(JoinPoint joinPoint, ExceptionListener exceptionListener, Exception e) {
+        sendExceptionNotice(joinPoint, exceptionListener, e);
     }
 
     public void sendExceptionNotice(JoinPoint joinPoint, ExceptionListener listener, Exception e) {

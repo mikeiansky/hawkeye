@@ -6,7 +6,7 @@
     <parent>
         <groupId>io.github.mikeiansky</groupId>
         <artifactId>hawkeye</artifactId>
-        <version>1.0.5</version>
+        <version>1.0.7</version>
     </parent>
 
     <artifactId>hawkeye-starter</artifactId>

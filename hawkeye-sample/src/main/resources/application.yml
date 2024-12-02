@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: mikeiansky-sample
+
+
+server:
+  port: 8080
+
+
+io:
+  github:
+    mikeiansky:
+      hawkeye:
+        package-prefix: com.ciwei.meadow
+        notice-wechat-hook: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=cd27e132-a659-41b4-aedf-893ff0637804

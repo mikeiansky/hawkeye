@@ -45,13 +45,27 @@ public class TimeoutNoticeAop {
         threadPoolExecutor = NoticeThreadPool.getThreadPool();
     }
 
-    @Before(value = "@within(listener) || @annotation(listener)")
-    public void timeoutListenBefore(JoinPoint point, TimeOutListener listener) {
+    @Before(value = "@within(timeOutListener)")
+    public void clazzTimeoutListenBefore(JoinPoint point, TimeOutListener timeOutListener) {
         startTime.set(System.currentTimeMillis());
     }
 
-    @After(value = "@within(listener) || @annotation(listener)")
-    public void timeoutListenAfter(JoinPoint joinPoint, TimeOutListener listener) {
+    @Before(value = "@annotation(timeOutListener)")
+    public void methodTimeoutListenBefore(JoinPoint point, TimeOutListener timeOutListener) {
+        startTime.set(System.currentTimeMillis());
+    }
+
+    @After(value = "@within(timeOutListener)")
+    public void clazzTimeoutListenAfter(JoinPoint joinPoint, TimeOutListener timeOutListener) {
+        detectTimeout(joinPoint, timeOutListener);
+    }
+
+    @After(value = "@annotation(timeOutListener)")
+    public void methodTimeoutListenAfter(JoinPoint joinPoint, TimeOutListener timeOutListener) {
+        detectTimeout(joinPoint, timeOutListener);
+    }
+
+    private void detectTimeout(JoinPoint joinPoint, TimeOutListener listener) {
         Long start = startTime.get();
         if (start == null) {
             return;

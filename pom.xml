@@ -6,12 +6,13 @@
 
     <groupId>io.github.mikeiansky</groupId>
     <artifactId>hawkeye</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.7</version>
     <packaging>pom</packaging>
     <modules>
         <module>hawkeye-context</module>
         <module>hawkeye-autoconfigure</module>
         <module>hawkeye-starter</module>
+        <module>hawkeye-sample</module>
     </modules>
 
     <description>hawkeye</description>
@@ -148,6 +149,9 @@
                 <configuration>
                     <publishingServerId>central</publishingServerId>
                     <autoPublish>true</autoPublish>
+                    <excludeArtifacts>
+                        hawkeye-sample
+                    </excludeArtifacts>
                 </configuration>
             </plugin>
             <!-- Maven GPG Plugin -->
