@@ -32,4 +32,14 @@ public class HawkeyeSampleController {
         return "sample timeout";
     }
 
+    @GetMapping("exception_timeout")
+    public String testTimeoutException() {
+        try {
+            Thread.sleep(3000L);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        throw new RuntimeException("timeout exception");
+    }
+
 }

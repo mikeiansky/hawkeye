@@ -78,5 +78,21 @@ class HawkeyeSampleControllerTest {
 
     }
 
+    @Test
+    public void testTimeoutException() throws InterruptedException {
+        RequestBuilder requestBuilder = MockMvcRequestBuilders.get("/hawkeye/sample/exception_timeout")
+                .headers(mockHeaders())
+                ;
+
+        try {
+            MvcResult mvcResult = mockMvc.perform(requestBuilder)
+                    .andDo(MockMvcResultHandlers.print())
+                    .andReturn();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        Thread.sleep(1000L);
+    }
+
 
 }
