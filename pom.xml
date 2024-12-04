@@ -5,17 +5,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.mikeiansky</groupId>
-    <artifactId>hawkeye</artifactId>
-    <version>1.0.7</version>
+    <artifactId>mikeiansky-hawkeye</artifactId>
+    <version>1.0.8</version>
     <packaging>pom</packaging>
     <modules>
-        <module>hawkeye-context</module>
-        <module>hawkeye-autoconfigure</module>
-        <module>hawkeye-starter</module>
-        <module>hawkeye-sample</module>
+        <module>mikeiansky-hawkeye-context</module>
+        <module>mikeiansky-hawkeye-autoconfigure</module>
+        <module>mikeiansky-hawkeye-starter</module>
+        <module>mikeiansky-hawkeye-sample</module>
     </modules>
 
-    <description>hawkeye</description>
+    <description>mikeiansky-hawkeye</description>
     <url>https://github.com/mikeiansky/hawkeye</url>
     <developers>
         <developer>
@@ -54,17 +54,17 @@
             <!-- 管理子模块版本 -->
             <dependency>
                 <groupId>io.github.mikeiansky</groupId>
-                <artifactId>hawkeye-context</artifactId>
+                <artifactId>mikeiansky-hawkeye-context</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mikeiansky</groupId>
-                <artifactId>hawkeye-autoconfigure</artifactId>
+                <artifactId>mikeiansky-hawkeye-autoconfigure</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.github.mikeiansky</groupId>
-                <artifactId>hawkeye-starter</artifactId>
+                <artifactId>mikeiansky-hawkeye-starter</artifactId>
                 <version>${project.version}</version>
             </dependency>
 

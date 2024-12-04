@@ -5,21 +5,22 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>io.github.mikeiansky</groupId>
-        <artifactId>hawkeye</artifactId>
-        <version>1.0.7</version>
+        <artifactId>mikeiansky-hawkeye</artifactId>
+        <version>1.0.8</version>
     </parent>
 
-    <artifactId>hawkeye-starter</artifactId>
-    <description>hawkeye-starter</description>
+    <artifactId>mikeiansky-hawkeye-autoconfigure</artifactId>
+    <description>mikeiansky-hawkeye-autoconfigure</description>
 
     <dependencies>
         <dependency>
-            <groupId>io.github.mikeiansky</groupId>
-            <artifactId>hawkeye-context</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
+
         <dependency>
             <groupId>io.github.mikeiansky</groupId>
-            <artifactId>hawkeye-autoconfigure</artifactId>
+            <artifactId>mikeiansky-hawkeye-context</artifactId>
         </dependency>
     </dependencies>
 

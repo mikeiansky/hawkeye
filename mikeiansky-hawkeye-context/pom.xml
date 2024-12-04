@@ -5,13 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>io.github.mikeiansky</groupId>
-        <artifactId>hawkeye</artifactId>
-        <version>1.0.7</version>
+        <artifactId>mikeiansky-hawkeye</artifactId>
+        <version>1.0.8</version>
     </parent>
 
-    <artifactId>hawkeye-context</artifactId>
-
-    <description>hawkeye-context</description>
+    <artifactId>mikeiansky-hawkeye-context</artifactId>
+    <description>mikeiansky-hawkeye-context</description>
 
     <dependencies>
         <dependency>

@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>io.github.mikeiansky</groupId>
-        <artifactId>hawkeye</artifactId>
-        <version>1.0.7</version>
+        <artifactId>mikeiansky-hawkeye</artifactId>
+        <version>1.0.8</version>
     </parent>
 
-    <artifactId>hawkeye-sample</artifactId>
+    <artifactId>mikeiansky-hawkeye-sample</artifactId>
 
     <properties>
         <maven.deploy.skip>true</maven.deploy.skip>
@@ -42,7 +42,7 @@
 
         <dependency>
             <groupId>io.github.mikeiansky</groupId>
-            <artifactId>hawkeye-starter</artifactId>
+            <artifactId>mikeiansky-hawkeye-starter</artifactId>
         </dependency>
 
 
