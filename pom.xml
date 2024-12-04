@@ -6,7 +6,7 @@
 
     <groupId>io.github.mikeiansky</groupId>
     <artifactId>mikeiansky-hawkeye</artifactId>
-    <version>1.0.8</version>
+    <version>1.0.10</version>
     <packaging>pom</packaging>
     <modules>
         <module>mikeiansky-hawkeye-context</module>
@@ -16,7 +16,7 @@
     </modules>
 
     <description>mikeiansky-hawkeye</description>
-    <url>https://github.com/mikeiansky/hawkeye</url>
+    <url>https://github.com/mikeiansky/mikeiansky-hawkeye</url>
     <developers>
         <developer>
             <id>mikeiansky</id>
@@ -32,9 +32,9 @@
         </license>
     </licenses>
     <scm>
-        <url>https://github.com/mikeiansky/hawkeye</url>
-        <connection>scm:git:git://github.com/mikeiansky/hawkeye.git</connection>
-        <developerConnection>scm:git:ssh://github.com/mikeiansky/hawkeye.git</developerConnection>
+        <url>https://github.com/mikeiansky/mikeiansky-hawkeye</url>
+        <connection>scm:git:git://github.com/mikeiansky/mikeiansky-hawkeye.git</connection>
+        <developerConnection>scm:git:ssh://github.com/mikeiansky/mikeiansky-hawkeye.git</developerConnection>
     </scm>
 
     <properties>
